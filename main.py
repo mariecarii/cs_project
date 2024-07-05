@@ -55,6 +55,9 @@ question_number = 0
 ## create a variable to keep score
 score = 0
 
+print('\n')
+print("\u001b[46mPython Quiz\u001b[0m\n")
+
 for question in questions:
     ##this line will provide seperation between questions for a cleaner, more readable look
     ##i used an f string to dynamically change the question number (i did +1 because my question_number count starts at 0 and i dont want Question #0)
@@ -71,7 +74,7 @@ for question in questions:
         print("You're correct!")
     elif user_guess == 'QUIT':
         print('\n')
-        print("quitting ........")
+        print("\u001b[31mquitting ........\u001b[0m")
         break
     elif user_guess != answers[question_number]:
         print("You're incorrect!")
@@ -84,5 +87,5 @@ for question in questions:
     print("\n")
 
 end_time = time.time()
-print(f"Your final score: {score}!")
-print(f"It took you {end_time - start_time} seconds to complete this quiz!")
+print(f"\u001b[47mYour final score: {score}!\u001b[0m")
+print(f"\u001b[47mIt took you {end_time - start_time} seconds to complete this quiz!\u001b[0m")
