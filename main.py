@@ -1,3 +1,6 @@
+import time
+start_time = time.time()
+
 ## write out questions into a tuple
 questions = ("Which operator is used for power? ",
             "How do we check the type of a variable x? ",
@@ -76,4 +79,6 @@ for question in questions:
     ##print a new line to create a cleaner, more readable look
     print("\n")
 
+end_time = time.time()
 print(f"Your final score: {score}!")
+print(f"It took you {end_time - start_time} seconds to complete this quiz!")
