@@ -65,10 +65,14 @@ for question in questions:
     for choice in choices[question_number]:
         print(choice) 
     ##ask user for a guess and user .upper method incase user inputs selection in lowercase
-    user_guess = input("Enter A, B, C, or D: ").upper()
+    user_guess = input("Enter A, B, C, D, or 'quit':  ").upper()
     if user_guess == answers[question_number]:
         score += 1
         print("You're correct!")
+    elif user_guess == 'QUIT':
+        print('\n')
+        print("quitting ........")
+        break
     elif user_guess != answers[question_number]:
         print("You're incorrect!")
         print(f"{answers[question_number]} is the answer")
