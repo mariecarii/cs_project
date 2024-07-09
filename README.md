@@ -1,7 +1,11 @@
 # CSCI 12700 Project
+<p>
+<img src="python_quiz_ss.png" alt="Console Screenshot"/>
+<p>
 
 ## Project Description 
 For my project I decided to do something with dual purpose, a fun quiz game and also python review. I used the class notes I have collected through the summer semester to create questions.
+Some cool features include a score tracker, timer, colors, and quit.
 
 ## Languages Used 
 Python
